@@ -2,6 +2,7 @@ import './styles.css'
 import { mainSection } from './common.js'
 import { homePage } from './homePage.js'
 import { menuPage } from './menuPage.js'
+import { aboutPage } from './aboutPage.js'
 
 
 const togglePage = () => {
@@ -19,7 +20,13 @@ const togglePage = () => {
             case 'menu':
                 menuPage.render();
                 break;
+            case 'about':
+                aboutPage.render();
+                break;
         }
+
+        pageButtons.forEach(button => button.classList.remove('nav-selected'));
+        e.target.classList.add('nav-selected');
     };
 
     pageButtons.forEach(button => {
