@@ -136,18 +136,13 @@ a.page-buttons:hover {
 }
 
 #meow-image {
-    height: 41rem;
-    width: 41rem;
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 900px) {
     #content {
         margin: 1rem;
-    }
-
-    #meow-image {
-        max-height: 100%;
-        max-width: 100%;
     }
 }
 
